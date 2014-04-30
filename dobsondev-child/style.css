@@ -1,0 +1,11 @@
+/*
+Theme Name:     DobsonDev Theme Child
+Theme URI:      http://dobsondev.com
+Description:    Child theme for the DobsonDev Theme
+Author:         YOUR_NAME
+Author URI:     http://YOUR_WEBSITE.com
+Template:       dobsondev-theme
+Version:        6.6.6
+*/
+
+@import url("../dobsondev-theme/style.css");
