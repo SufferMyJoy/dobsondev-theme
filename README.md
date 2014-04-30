@@ -11,7 +11,9 @@ It is highly recommended to use the supplied child theme so you don't lose chang
 
 An child theme is included called **dobsondev-child**. Simply upload that folder to your WP site the same way you did the primary **dobsondev-theme** folder.
 
-Your final theme directory structure should include both **wp-content/themes/dobsondev-theme** and **wp-content/themes/dobsondev-child**
+Your final theme directory structure should include both:
+* **wp-content/themes/dobsondev-theme**
+* **wp-content/themes/dobsondev-child**
 
 Activate **dobsondev-child** from Appearance -> Themes and enjoy.
 
