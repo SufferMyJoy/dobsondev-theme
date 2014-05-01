@@ -19,7 +19,7 @@ Activate **dobsondev-child** from Appearance -> Themes and enjoy.
 
 ## Options Framework
 
-Description: A framework for building theme options.
-Author: Devin Price
-Author URI: [http://www.wptheming.com](http://www.wptheming.com)
-GPL License: [http://www.gnu.org/licenses/gpl.html](http://www.gnu.org/licenses/gpl.html)
+Description: A framework for building theme options.  
+Author: Devin Price  
+Author URI: [http://www.wptheming.com](http://www.wptheming.com)  
+GPL License: [http://www.gnu.org/licenses/gpl.html](http://www.gnu.org/licenses/gpl.html)  
