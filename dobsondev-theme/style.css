@@ -76,6 +76,12 @@ img {
   font-size: 300%;
 }
 
+#site-logo img {
+  float: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 #mobile-menu-wrapper {
   display: none;
 }

@@ -210,7 +210,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'name' => __('Logo Uploader', 'options_framework_theme'),
-		'desc' => __('Upload Your Logo.', 'options_framework_theme'),
+		'desc' => __('Upload Your Logo. (Recommended size of 350px by 225px)', 'options_framework_theme'),
 		'id' => 'logo_uploader',
 		'type' => 'upload');
 
