@@ -134,6 +134,10 @@ img {
   color: #0099FF;
 }
 
+.blog-post-title a {
+  text-decoration: none;
+}
+
 .blog-post-date {
 
 }
