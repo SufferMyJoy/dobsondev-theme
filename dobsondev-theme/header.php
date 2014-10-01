@@ -18,8 +18,31 @@
 <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
 <title>
-  <?php echo get_bloginfo('name'); ?>
-  <?php wp_title(); ?>
+  <?php
+    $optionsframework_settings = get_option('optionsframework');
+    // Gets the unique option id
+    $option_name = $optionsframework_settings['id'];
+    $options = get_option($option_name);
+
+    if ( is_front_page() ) {
+      // The Home Page Title
+      echo get_bloginfo('name') . ' | ' . $options['home_page_description'];
+    } else if ( is_page_template( 'templates/template-blog.php' ) ) {
+      // The Blog Page Title
+      echo get_bloginfo('name');
+      wp_title('');
+      echo ' | ' . $options['blog_description'];
+    } else if ( is_page_template( 'templates/template-portfolio.php' ) ) {
+      // The Portfolio Page Title
+      echo get_bloginfo('name');
+      wp_title('');
+      echo ' | ' . $options['portfolio_description'];
+    } else {
+      // All Other Pages Title
+      wp_title('');
+      echo ' | ' . get_bloginfo('name');
+    }
+  ?>
 </title>
 
 <link rel="profile" href="http://gmpg.org/xfn/11">

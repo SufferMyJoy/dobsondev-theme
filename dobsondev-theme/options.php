@@ -205,6 +205,47 @@ function optionsframework_options() {
 	// 	'type' => 'checkbox');
 
 	$options[] = array(
+		'name' => __('SEO Settings', 'options_framework_theme'),
+		'type' => 'heading');
+
+	$options[] = array(
+		'name' => __('Home Page Description', 'options_framework_theme'),
+		'desc' => __('A Description of Your Home Page.', 'options_framework_theme'),
+		'id' => 'home_page_description',
+		'std' => '',
+		'type' => 'text');
+
+	$options[] = array(
+		'name' => __('Portfolio Description', 'options_framework_theme'),
+		'desc' => __('A Description of Your Portfolio Page.', 'options_framework_theme'),
+		'id' => 'portfolio_description',
+		'std' => '',
+		'type' => 'text');
+
+	$options[] = array(
+		'name' => __('Blog Description', 'options_framework_theme'),
+		'desc' => __('A Description of Your Blog.', 'options_framework_theme'),
+		'id' => 'blog_description',
+		'std' => '',
+		'type' => 'text');
+
+	// $options[] = array(
+	// 	'name' => __('Textarea', 'options_framework_theme'),
+	// 	'desc' => __('Textarea description.', 'options_framework_theme'),
+	// 	'id' => 'example_textarea',
+	// 	'std' => 'Default Text',
+	// 	'type' => 'textarea');
+
+	// $options[] = array(
+	// 	'name' => __('Input Select Small', 'options_framework_theme'),
+	// 	'desc' => __('Small Select Box.', 'options_framework_theme'),
+	// 	'id' => 'example_select',
+	// 	'std' => 'three',
+	// 	'type' => 'select',
+	// 	'class' => 'mini', //mini, tiny, small
+	// 	'options' => $test_array);
+
+	$options[] = array(
 		'name' => __('Advanced Settings', 'options_framework_theme'),
 		'type' => 'heading');
 

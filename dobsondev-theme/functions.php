@@ -30,6 +30,22 @@ if (!function_exists(dobsondev_scripts)) {
 
 
 /*-----------------------------------------------------------------------------------*/
+/* Creates the DobsonDev Sidebar
+/*-----------------------------------------------------------------------------------*/
+function dobsondev_create_sidebar() {
+  register_sidebar( array(
+    'name' => 'DobsonDev Sidebar',
+    'id' => 'dobsondev_theme_sidebar',
+    'before_widget' => '<div id="widget-area">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 id="widget-title">',
+    'after_title' => '</h3>')
+  );
+}
+add_action( 'widgets_init', 'dobsondev_create_sidebar' );
+
+
+/*-----------------------------------------------------------------------------------*/
 /* Header Start - Creates Header
 /*-----------------------------------------------------------------------------------*/
 
@@ -146,6 +162,7 @@ if (!function_exists(dosondev_menu)) {
       echo '</a>';
     }
     echo '</div><!-- END SOCIAL MEDIA -->';
+    dynamic_sidebar( 'dobsondev_theme_sidebar' );
     echo '</div><!-- END MAIN MENU -->';
   }
   add_action( 'dobsondev_menu', 'dobsondev_menu', 1 );
