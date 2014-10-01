@@ -76,8 +76,8 @@ if (!function_exists(dobsondev_header_logo)) {
     else {
       echo '<a id="site-logo" href="' . get_site_url() . '">';
       echo '<h1>' . get_bloginfo( 'name' ) . '</h1>';
-      echo '<div class="clear"></div>';
       echo '</a>';
+      echo '<div class="clear"></div>';
     }
   }
   add_action( 'dobsondev_header', 'dobsondev_header_logo', 2 );

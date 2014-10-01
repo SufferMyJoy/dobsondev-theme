@@ -65,7 +65,8 @@ img {
 #site-logo {
   color: #000;
   text-decoration: none;
-  text-align: right;
+  display: inline;
+  float: right;
 }
 
 #site-logo:hover{
