@@ -19,6 +19,19 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+<!-- For Pocket Share -->
+<script type="text/javascript">
+!function(d,i) {
+  if(!d.getElementById(i)){
+    var j = d.createElement("script");
+    j.id = i;
+    j.src = "https://widgets.getpocket.com/v1/j/btn.js?v=1";
+    var w = d.getElementById(i);
+    d.body.appendChild(j);
+  }
+}(document,"pocket-btn-js");
+</script>
+
 <?php
   $post = get_post();
   $post_id = get_the_ID();
@@ -44,7 +57,9 @@
            curPageURL() . "\" data-type=\"button_count\"></div> <br />";
      echo "<script src=\"//platform.linkedin.com/in.js\" type=\"text/javascript\"> lang: en_US </script>" .
            "<script type=\"IN/Share\" data-url=\"" .
-           curPageURL() . "\" data-counter=\"right\"></script> <br /> <br />";
+           curPageURL() . "\" data-counter=\"right\"></script>";
+     echo '<a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>';
+     echo '<br /> <br />';
   echo '</div>';
 
   the_content();
