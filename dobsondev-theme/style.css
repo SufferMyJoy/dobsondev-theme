@@ -134,10 +134,35 @@ img {
   margin-right: 3px;
 }
 
+.search-form input#search-input {
+  width: 50%;
+  padding: 5px;
+  border: 5px solid #3D3D3D;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.search-form input#search-submit {
+  padding: 10px;
+  color: #FFF;
+  background-color: #0099FF;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+}
+
 #content-wrap {
   float: left;
   width: 75%;
   margin-left: 30%;
+}
+
+a.search-results-title {
+  font-size: 150%;
+  text-decoration: none;
+}
+
+a.archive-results-title {
+  font-size: 150%;
+  text-decoration: none;
 }
 
 .blog-post-title {

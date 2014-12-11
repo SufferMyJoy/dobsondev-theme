@@ -5,6 +5,7 @@
  * @package     DobsonDev Theme
  * @author      Alex Dobson - http://dobsondev.com/
  */
+
 get_header();
 do_action('dobsondev_before_content');
 get_template_part( 'loop', 'index' );
